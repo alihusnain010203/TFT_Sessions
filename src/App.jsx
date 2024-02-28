@@ -236,7 +236,7 @@ function App() {
             </p>
             <div className="date-holder">
               <img
-                src="https://img.freepik.com/premium-vector/calendar-icon-calendar-logo-date-time-icon_761928-109.jpg"
+                src="../src/assets/calendar.png"
                 alt="calendar"
                 height="70px"
                 width="70px"
@@ -247,7 +247,7 @@ function App() {
             </div>
             <div className="address-holder">
               <img
-                src="https://static.vecteezy.com/system/resources/thumbnails/000/552/683/small/location_pin_002.jpg"
+                src="../src/assets/placeholder.png"
                 alt="map"
                 height="70px"
                 width="70px"
