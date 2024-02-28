@@ -249,8 +249,8 @@ function App() {
                 height="70px"
                 width="70px"
               />
-              <p className="time">
-                <b>Date & Time:</b> February 29th, 2024, at 6:30 AM
+              <p className="time" >
+                <b>Date & Time:</b> February 29th, 2024, at <span style={{fontWeight:"bold" ,color:"#2738FF"}}>05:00 PM</span> 
               </p>
             </div>
             <div className="address-holder">
