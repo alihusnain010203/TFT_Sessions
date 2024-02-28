@@ -98,11 +98,11 @@ function App() {
             >
               <div className="col-md-5 d-flex flex-column justify-content-center align-items-center">
                 <p className="heading">
-                  <b>Build your Career at Top Product Companies</b>
+                  <b>Learn Today Excel Tomorrow</b>
                 </p>
 
                 <p className="heading-five">
-                  Welcome to TFT Trainings, where innovation meets expertise!
+                  {/* Welcome to TFT Trainings, where innovation meets expertise!
                   Dive into the dynamic world of cutting-edge technologies, web
                   and app development, graphic design, and Mobile App
                   development. Our institute is your gateway to mastering the
@@ -111,7 +111,8 @@ function App() {
                   brilliance, or creating stunning visuals, we're here to guide
                   you on an exciting learning journey. Join us and embark on a
                   path of limitless possibilities in the realm of technology.
-                  Let's build the future together!
+                  Let's build the future together! */}
+                  Welcome to TFT Trainings! We’re here to guide you on an exciting learning journey. Whether you’re passionate about creating stunning visuals or exploring the world of technology, let’s build the future together! 🚀🌟
                 </p>
               </div>
 
@@ -203,7 +204,7 @@ function App() {
             <div className="d-flex justify-content-around row detail-holder ">
               <div className="img-section col-md-4">
                 <div className="img-holder">
-                  <img src={ImgTwo} height="300px" alt="" />
+                  <img src={ImgTwo} height="100%" alt="" />
                 </div>
                 <p className="name">
                   Nabeel Sabir Khan <br />
@@ -213,7 +214,7 @@ function App() {
               <div className="list-holder col-md-8">
                 <ol
                   className="list"
-                  style={{ listStyle: "none" ,fontSize:"20px" }}
+                  style={{ listStyle: "none" ,fontSize:"22px" }}
                 >
                   <li>
                     🌟 Explore the world of coding and see if it sparks your
@@ -230,18 +231,18 @@ function App() {
             </div>
           </div>
           <div className="container container_three text-center">
-            <center>
+            {/* <center>
               <h1>What will you learn</h1>
-            </center>
+            </center> */}
             {/* <div className="d-flex"> */}
-            <p className="about">
+            {/* <p className="about">
               In this session, understand how you can stand out in competitive
               IT fields , and how you can make a difference in the world of
               technology. Learn about the latest trends and technologies in the
               industry, and how you can leverage them to build a successful
               career. Get insights from industry experts and learn about the
               skills that are in demand.
-            </p>
+            </p> */}
             <div className="date-holder">
               <img
                 src="https://img.freepik.com/premium-vector/calendar-icon-calendar-logo-date-time-icon_761928-109.jpg"
