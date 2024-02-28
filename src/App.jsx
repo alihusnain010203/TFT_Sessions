@@ -24,13 +24,16 @@ function App() {
       currently_wroking: false, // Always set to false
     };
 
-    fetch("http://ec2-13-233-60-110.ap-south-1.compute.amazonaws.com:8002/auth/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(modifiedData),
-    })
+    fetch(
+      "https://tft-trainings.cyclic.app/auth/register",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(modifiedData),
+      }
+    )
       .then((res) => {
         setshow(true);
         if (!res.ok) {
@@ -211,14 +214,17 @@ function App() {
                 </p>
               </div>
               <div className="list-holder col-md-6">
-                <ol className="list">
+                <ol className="list" style={{ listStyle: "none" ,fontSize:"24px" }}>
                   <li>
-                    Discover the core skills essential for a successful career
+                    🌟 Explore the world of coding and see if it sparks your
+                    creativity!
                   </li>
+                  <li>🧭Explore key concepts in a fun and interactive way.</li>
+                  
                   <li>
-                    Discover what recruiters are looking for in candidates
+                    🌍Discover if a coding career aligns with your aspirations.
                   </li>
-                  <li>Learn how you can stand out at top product companies</li>
+                  <li>💡Ask questions and get expert insights.</li>
                 </ol>
               </div>
             </div>
@@ -274,7 +280,7 @@ function App() {
                   <br />U Have Registered
                 </div>
 
-                <a href="" className="whatsappLink" style={{}}>
+                <a href="https://chat.whatsapp.com/KA8q7lBM2yYLrBQTk7Oerd" className="whatsappLink" style={{}}>
                   <img src={Whatsapp} width="45px" alt="" />
 
                   <p style={{ marginLeft: "10px", fontSize: "30px" }}>
