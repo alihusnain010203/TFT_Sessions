@@ -230,16 +230,18 @@ function App() {
             </div>
           </div>
           <div className="container container_three text-center">
-            {/* <center>
+            <center>
               <h1>What will you learn</h1>
-            </center> */}
+            </center>
             {/* <div className="d-flex"> */}
-            {/* <p className="about">
+            <p className="about">
               In this session, understand how you can stand out in competitive
-              SDE roles, excel in technical interviews, and develop the mindset
-              prized by top tech companies. Equip yourself with the knowledge
-              and inspiration to make your next career step with confidence.
-            </p> */}
+              IT fields , and how you can make a difference in the world of
+              technology. Learn about the latest trends and technologies in the
+              industry, and how you can leverage them to build a successful
+              career. Get insights from industry experts and learn about the
+              skills that are in demand.
+            </p>
             <div className="date-holder">
               <img
                 src="https://img.freepik.com/premium-vector/calendar-icon-calendar-logo-date-time-icon_761928-109.jpg"
