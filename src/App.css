@@ -270,15 +270,15 @@ border: 1px solid rgba(253, 253, 253, 0.09);
 }
 @media screen and (max-width:988px) {
   .container_two{
-    margin-top: 550px;
+    margin-top: 650px;
   }
 }
 @media screen and (max-width:768px) {
   .container_two{
-    margin-top: 850px;
+    margin-top: 950px;
   }
 }
-@media screen and (max-width:460px) {
+@media screen and (max-width:576px) {
   .container_two{
     margin-top: 1050px;
   }
