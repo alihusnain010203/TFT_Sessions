@@ -9,6 +9,7 @@ import Whatsapp from "../src/assets/WhatsApp.svg.webp";
 
 function App() {
   const [show, setshow] = useState(false);
+  const [error, setError] = useState(false);
   const [data, setdata] = useState({
     name: "",
     email: "",
@@ -23,7 +24,7 @@ function App() {
       currently_wroking: false, // Always set to false
     };
 
-    fetch("https://tft-registration.cyclic.app/auth/register", {
+    fetch("https://tft-registration.cyclic.App/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,6 +41,7 @@ function App() {
         // console.log(responseData);
       })
       .catch((err) => {
+        setError(true);
         console.error("Error:", err);
       });
   }
@@ -96,15 +98,20 @@ function App() {
             >
               <div className="col-md-5 d-flex flex-column justify-content-center align-items-center">
                 <p className="heading">
-                  <b>Build your SDE Career at Top Product Companies</b>
+                  <b>Build your Career at Top Product Companies</b>
                 </p>
 
                 <p className="heading-five">
-                  How do you plan to make your career breakthrough in top
-                  product companies? Join us on 24th February at 11:30 AM to get
-                  a roadmap for a successful SDE career in your dream company.
-                  Participate in the #IBelieveinDoing challenge, and get
-                  scholarships up to ₹1,00,000!
+                  Welcome to TFT Trainings, where innovation meets expertise!
+                  Dive into the dynamic world of cutting-edge technologies, web
+                  and app development, graphic design, and Mobile App
+                  development. Our institute is your gateway to mastering the
+                  latest frameworks and skills that drive the digital landscape.
+                  Whether you're passionate about front-end wizardry, back-end
+                  brilliance, or creating stunning visuals, we're here to guide
+                  you on an exciting learning journey. Join us and embark on a
+                  path of limitless possibilities in the realm of technology.
+                  Let's build the future together!
                 </p>
               </div>
 
@@ -168,6 +175,19 @@ function App() {
                           }}
                           value="Register Now"
                         />
+                      </div>
+                      <div>
+                        {error && (
+                          <p
+                            style={{
+                              color: "red",
+                              padding: "10px",
+                              backgroundColor: "black",
+                            }}
+                          >
+                            Try Again
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -248,22 +268,19 @@ function App() {
         <div className="after">
           <div className="after-padding">
             <b>
-            <div className="after-card">
+              <div className="after-card">
                 <div>
-                Congratulations !🥳
-                <br />U Have Registered
+                  Congratulations !🥳
+                  <br />U Have Registered
                 </div>
-              
-                  <a href="" className="whatsappLink" style={{
-                   
-                 
-                  }}>
-                    <img src={Whatsapp} width="45px" alt="" />
 
-                    <p style={{marginLeft:"10px",fontSize:"30px"}}>Join Us</p>
-                     
-                  </a>
-              
+                <a href="" className="whatsappLink" style={{}}>
+                  <img src={Whatsapp} width="45px" alt="" />
+
+                  <p style={{ marginLeft: "10px", fontSize: "30px" }}>
+                    Join Us
+                  </p>
+                </a>
               </div>
             </b>
           </div>
