@@ -24,7 +24,7 @@ function App() {
       currently_wroking: false, // Always set to false
     };
 
-    fetch("https://tft-registration.cyclic.App/auth/register", {
+    fetch("http://ec2-13-233-60-110.ap-south-1.compute.amazonaws.com:8002/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
