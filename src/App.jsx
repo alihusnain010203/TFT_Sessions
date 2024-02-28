@@ -24,16 +24,13 @@ function App() {
       currently_wroking: false, // Always set to false
     };
 
-    fetch(
-      "https://tft-trainings.cyclic.app/auth/register",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(modifiedData),
-      }
-    )
+    fetch("https://tft-trainings.cyclic.app/auth/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(modifiedData),
+    })
       .then((res) => {
         setshow(true);
         if (!res.ok) {
@@ -204,7 +201,7 @@ function App() {
               <h1 className="mt-4">About the session</h1>
             </center>
             <div className="d-flex justify-content-around row detail-holder ">
-              <div className="img-section col-md-6">
+              <div className="img-section col-md-4">
                 <div className="img-holder">
                   <img src={ImgTwo} height="300px" alt="" />
                 </div>
@@ -213,14 +210,17 @@ function App() {
                   <i>CEO of TechOverflow</i>
                 </p>
               </div>
-              <div className="list-holder col-md-6">
-                <ol className="list" style={{ listStyle: "none" ,fontSize:"24px" }}>
+              <div className="list-holder col-md-8">
+                <ol
+                  className="list"
+                  style={{ listStyle: "none" ,fontSize:"20px" }}
+                >
                   <li>
                     🌟 Explore the world of coding and see if it sparks your
                     creativity!
                   </li>
                   <li>🧭Explore key concepts in a fun and interactive way.</li>
-                  
+
                   <li>
                     🌍Discover if a coding career aligns with your aspirations.
                   </li>
@@ -230,16 +230,16 @@ function App() {
             </div>
           </div>
           <div className="container container_three text-center">
-            <center>
+            {/* <center>
               <h1>What will you learn</h1>
-            </center>
+            </center> */}
             {/* <div className="d-flex"> */}
-            <p className="about">
+            {/* <p className="about">
               In this session, understand how you can stand out in competitive
               SDE roles, excel in technical interviews, and develop the mindset
               prized by top tech companies. Equip yourself with the knowledge
               and inspiration to make your next career step with confidence.
-            </p>
+            </p> */}
             <div className="date-holder">
               <img
                 src="https://img.freepik.com/premium-vector/calendar-icon-calendar-logo-date-time-icon_761928-109.jpg"
@@ -280,7 +280,11 @@ function App() {
                   <br />U Have Registered
                 </div>
 
-                <a href="https://chat.whatsapp.com/KA8q7lBM2yYLrBQTk7Oerd" className="whatsappLink" style={{}}>
+                <a
+                  href="https://chat.whatsapp.com/KA8q7lBM2yYLrBQTk7Oerd"
+                  className="whatsappLink"
+                  style={{}}
+                >
                   <img src={Whatsapp} width="45px" alt="" />
 
                   <p style={{ marginLeft: "10px", fontSize: "30px" }}>
