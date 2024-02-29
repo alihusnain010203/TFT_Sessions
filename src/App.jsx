@@ -8,7 +8,7 @@ import ImgFour from "../src/assets/Monochrome-dark.svg";
 import Whatsapp from "../src/assets/WhatsApp.svg.webp";
 
 function App() {
-  const [show, setshow] = useState(true);
+  const [show, setshow] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [data, setdata] = useState({
