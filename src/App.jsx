@@ -8,8 +8,9 @@ import ImgFour from "../src/assets/Monochrome-dark.svg";
 import Whatsapp from "../src/assets/WhatsApp.svg.webp";
 
 function App() {
-  const [show, setshow] = useState(false);
+  const [show, setshow] = useState(true);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [data, setdata] = useState({
     name: "",
     email: "",
@@ -18,6 +19,7 @@ function App() {
     graduation_year: "",
   });
   function register() {
+    setLoading(true);
     const modifiedData = {
       ...data,
       graduation_year: parseInt(data.graduation_year, 10) || 0,
@@ -112,7 +114,10 @@ function App() {
                   you on an exciting learning journey. Join us and embark on a
                   path of limitless possibilities in the realm of technology.
                   Let's build the future together! */}
-                  Welcome to TFT Trainings! We’re here to guide you on an exciting learning journey. Whether you’re passionate about creating stunning visuals or exploring the world of technology, let’s build the future together! 🚀🌟
+                  Welcome to TFT Trainings! We’re here to guide you on an
+                  exciting learning journey. Whether you’re passionate about
+                  creating stunning visuals or exploring the world of
+                  technology, let’s build the future together! 🚀🌟
                 </p>
               </div>
 
@@ -169,13 +174,17 @@ function App() {
                       />
 
                       <div className="inputBox">
-                        <input
-                          type="submit"
-                          onClick={(e) => {
-                            onSubmit(e);
-                          }}
-                          value="Register Now"
-                        />
+                        {loading ? (
+                          <div class="loader"></div>
+                        ) : (
+                          <input
+                            type="submit"
+                            onClick={(e) => {
+                              onSubmit(e);
+                            }}
+                            value="Register Now"
+                          />
+                        )}
                       </div>
                       <div>
                         {error && (
@@ -214,7 +223,7 @@ function App() {
               <div className="list-holder col-md-8">
                 <ol
                   className="list"
-                  style={{ listStyle: "none" ,fontSize:"22px" }}
+                  style={{ listStyle: "none", fontSize: "22px" }}
                 >
                   <li>
                     🌟 Explore the world of coding and see if it sparks your
@@ -250,8 +259,11 @@ function App() {
                 height="70px"
                 width="70px"
               />
-              <p className="time" >
-                <b>Date & Time:</b> February 29th, 2024, at <span style={{fontWeight:"bold" ,color:"#2738FF"}}>05:00 PM</span> 
+              <p className="time">
+                <b>Date & Time:</b> February 29th, 2024, at{" "}
+                <span style={{ fontWeight: "bold", color: "#2738FF" }}>
+                  05:00 PM
+                </span>
               </p>
             </div>
             <div className="address-holder">
@@ -286,9 +298,10 @@ function App() {
                 <a
                   href="https://chat.whatsapp.com/KA8q7lBM2yYLrBQTk7Oerd"
                   className="whatsappLink"
-                  style={{}}
                 >
-                  <img src={Whatsapp} width="45px" alt="" />
+                  <p>
+                    <img src={Whatsapp} width="35px" alt="" />
+                  </p>
 
                   <p style={{ marginLeft: "10px", fontSize: "30px" }}>
                     Join Us
