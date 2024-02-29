@@ -263,14 +263,7 @@ border: 1px solid rgba(253, 253, 253, 0.09);
 .whatsappLink {
   list-style: none;
   text-decoration: none;
-  color: white;
-  background-color: green;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  margin-top: 20px;
+  margin-top: none;
 }
 
 @media screen and (max-width:1204px) {
