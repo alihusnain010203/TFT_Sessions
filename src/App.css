@@ -233,6 +233,7 @@ border: 1px solid rgba(253, 253, 253, 0.09);
 .heading-five{
   font-size: 1.4rem;
 }
+
 .after{
   height: 100vh;
   width: 100%;
@@ -241,6 +242,10 @@ border: 1px solid rgba(253, 253, 253, 0.09);
   justify-content: center;
   align-items: center;
 }
+/* .after-padding{
+  width: 90%;
+  font-size: 6vw;
+} */
 .after-card{
   padding: 50px;
   height: 70vh;
@@ -298,6 +303,26 @@ border: 1px solid rgba(253, 253, 253, 0.09);
     margin-top: 1350px;
   }
 }
+@media screen and (max-width:690px) {
+  .after-padding{
+    width: 90%;
+    font-size: 6vw;
+  }
+}
+@media screen and (max-width:380px) {
+  .after-padding{
+    width: 90%;
+    font-size: 4.5vw;
+  }
+}
+
+
+@media screen and (max-width:380px) {
+  .btn{
+    font-size: 1.5rem;
+  }
+}
+
 .loader {
   width: 50px;
   padding: 8px;
@@ -314,3 +339,25 @@ border: 1px solid rgba(253, 253, 253, 0.09);
   animation: l3 1s infinite linear;
 }
 @keyframes l3 {to{transform: rotate(1turn)}}
+
+.button{
+  border: 2px solid white;
+  height: fit-content;
+  background-color: green;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:400px) {
+  .button{
+    font-size: 15px;
+  }
+  
+}

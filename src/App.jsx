@@ -8,7 +8,7 @@ import ImgFour from "../src/assets/Monochrome-dark.svg";
 import Whatsapp from "../src/assets/WhatsApp.svg.webp";
 
 function App() {
-  const [show, setshow] = useState(false);
+  const [show, setshow] = useState(true);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [data, setdata] = useState({
@@ -294,8 +294,13 @@ function App() {
                   Congratulations !🥳
                   <br />U Have Registered
                 </div>
-
-                <a
+                <a href="https://chat.whatsapp.com/KA8q7lBM2yYLrBQTk7Oerd" style={{listStyle:"none" ,textDecoration:"none",marginTop:"10px"}}>
+                  <button className="button" >
+                    <img src={Whatsapp} width="35px" alt="" />
+                  <span>Join Us</span>
+                  </button>
+                </a>
+                {/* <a
                   href="https://chat.whatsapp.com/KA8q7lBM2yYLrBQTk7Oerd"
                   className="whatsappLink"
                 >
@@ -306,7 +311,7 @@ function App() {
                   <p style={{ marginLeft: "10px", fontSize: "30px" }}>
                     Join Us
                   </p>
-                </a>
+                </a> */}
               </div>
             </b>
           </div>
