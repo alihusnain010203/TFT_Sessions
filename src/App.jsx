@@ -299,7 +299,7 @@ function App() {
                   href="https://chat.whatsapp.com/KA8q7lBM2yYLrBQTk7Oerd"
                   className="whatsappLink"
                 >
-                  <p>
+                  <p style={{height:"50px"}}>
                     <img src={Whatsapp} width="35px" alt="" />
                   </p>
 
